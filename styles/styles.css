@@ -25,8 +25,17 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.instagram-embed {
+  margin: 30px 0;
+}
+
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -37,6 +46,10 @@ body {
 
 .card-body {
   padding: 30px;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 main .btn {
@@ -217,5 +230,11 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
